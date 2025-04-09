@@ -3,14 +3,16 @@
 name: First Workflow
 
 # Controls when the workflow will run
-on:workflow_dispatch:
+on: 
+  workflow_dispatch:
 
 
   # Allows you to run this workflow manually from the Actions tab
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
+  test:
     runs-on: ubuntu-latest
     steps:
-      -name: pring testing
-        run: echo Testing is done
+      - name: print testing
+        run: echo "testing is done"
